@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.padding {
+  @apply sm:px-16 px-8 sm:py-24 py-12;
+}
+
+.padding-x {
+  @apply sm:px-16 px-8;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  border-radius: 1px;
+  width: 0;
+  height: 2px;
+  background-color: #2b2b2b;
+  bottom: 2px;
+  left: 0;
+  transition: width .3s;
+}
+
+.nav-link:hover::before {
+  width: 70%;
+}
